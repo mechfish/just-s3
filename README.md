@@ -1,12 +1,8 @@
 # Just S3
 
-This is a CLI tool that copies to and from S3. It's statically-linked
-Golang and it has no other dependencies.
+This CLI tool copies files to and from S3. It's written in Go and has no runtime dependencies.
 
-I wrote it because usually all I want to do in my AMI or container or
-instance is to grab a single file from S3, and I'm tired of installing
-the entire `awscli` package, and its Python dependencies, just to do
-that.
+When I want to grab a single file from S3, I don't want to have to install the ever-expanding `awscli` package and its Python dependencies into my AMI or my Docker image.
 
 ## Usage
 
